@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>3HDS Services | Web platforms, mobile apps and trading systems</title>
-<meta name="description" content="3HDS Services designs and builds custom web platforms, mobile apps and MetaTrader 5 trading systems, then keeps them secure and running after launch.">
+<title>3HDS Services | Business software, apps and trading systems</title>
+<meta name="description" content="Custom business software that works online and offline, plus web platforms, mobile apps and MetaTrader 5 trading systems, from 3HDS Services.">
 <meta name="theme-color" content="#2F3CF4">
-<link rel="canonical" href="https://3hds.com/">
+<link rel="canonical" href="https://3hds.pages.dev/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F3CF4'/%3E%3Crect x='13' y='14' width='38' height='9' rx='4.5' fill='white'/%3E%3Crect x='25' y='27.5' width='26' height='9' rx='4.5' fill='white'/%3E%3Crect x='13' y='41' width='38' height='9' rx='4.5' fill='white'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="3HDS Services">
-<meta property="og:title" content="3HDS Services | Web platforms, mobile apps and trading systems">
-<meta property="og:description" content="Custom web platforms, mobile apps and MetaTrader 5 trading systems for clients in the UK, Australia and Pakistan.">
-<meta property="og:url" content="https://3hds.com/">
-<meta property="og:image" content="https://3hds.com/og-image.png">
+<meta property="og:title" content="3HDS Services | Business software, apps and trading systems">
+<meta property="og:description" content="Custom business software for online and offline use, web platforms, mobile apps and MetaTrader 5 trading systems for clients in the UK, Australia and Pakistan.">
+<meta property="og:url" content="https://3hds.pages.dev/">
+<meta property="og:image" content="https://3hds.pages.dev/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="3HDS Services: software your business can run on">
@@ -24,9 +24,9 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "3HDS Services",
-  "url": "https://3hds.com/",
-  "logo": "https://3hds.com/apple-touch-icon.png",
-  "email": "hello@3hds.com",
+  "description": "Custom business software for online and offline use, web platforms, mobile apps and MetaTrader 5 trading systems.",
+  "url": "https://3hds.pages.dev/",
+  "logo": "https://3hds.pages.dev/apple-touch-icon.png",
   "areaServed": ["GB", "AU", "PK"],
   "employee": [
     { "@type": "Person", "name": "Ashiq Hussein Maither", "jobTitle": "CEO" },
@@ -154,7 +154,7 @@ h2{font-stretch:118%;font-weight:720;font-size:clamp(2rem,4vw,3.2rem);line-heigh
 .console-bar{padding:12px;border-bottom:1px solid var(--line)}
 .tabs{display:inline-flex;gap:4px;padding:4px;background:var(--mist);border-radius:999px;max-width:100%;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{appearance:none;border:0;background:transparent;font:inherit;font-size:.9rem;font-weight:600;color:var(--muted);padding:9px 16px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:background-color .2s,color .2s}
+.tab{appearance:none;border:0;background:transparent;font:inherit;font-size:.9rem;font-weight:600;color:var(--muted);padding:9px 14px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:background-color .2s,color .2s}
 .tab:hover{color:var(--text)}
 .tab[aria-selected="true"]{background:var(--surface);color:var(--text);box-shadow:0 1px 3px rgba(13,20,51,.16)}
 .panel{display:flex;flex-direction:column;height:440px}
@@ -238,7 +238,8 @@ h2{font-stretch:118%;font-weight:720;font-size:clamp(2rem,4vw,3.2rem);line-heigh
 
 @media (max-width:640px){
   .panel{height:auto}
-  .console-bar .tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}
+  .console-bar .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}
+  .tab{padding:9px 6px}
   .tab-more{display:none}
   .app{grid-template-columns:minmax(0,1fr)}
   .app-nav{display:none}
@@ -286,6 +287,56 @@ h2{font-stretch:118%;font-weight:720;font-size:clamp(2rem,4vw,3.2rem);line-heigh
 .service li::before{content:"";position:absolute;left:0;top:.8em;width:10px;height:2px;background:var(--cobalt)}
 .service-stack{margin-top:16px;font-size:.92rem;color:var(--muted)}
 @media (max-width:900px){.service{grid-template-columns:minmax(0,1fr);gap:14px;padding-block:32px}}
+
+/* Point of sale panel */
+.pos{display:grid;grid-template-columns:minmax(0,1fr) 196px;height:100%}
+.pos-main{padding:18px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.pos-top{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:wrap}
+.sync-pill{display:inline-flex;align-items:center;gap:7px;padding:4px 10px;border-radius:999px;background:color-mix(in srgb,var(--signal) 24%,transparent);color:var(--st-parts);font-size:.74rem;font-weight:600;white-space:nowrap}
+.sync-pill i{width:7px;height:7px;border-radius:50%;background:var(--signal)}
+.pos-cats{display:flex;flex-wrap:wrap;gap:6px}
+.pos-cats span{padding:5px 11px;border-radius:999px;background:var(--mist);color:var(--muted);font-size:.76rem;font-weight:600}
+.pos-cats .is-active{background:var(--text);color:var(--surface)}
+.pos-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-content:start}
+.pos-grid span{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:74px;padding:10px;border:1px solid var(--line);border-radius:10px;font-size:.78rem}
+.pos-grid b{font-weight:600;line-height:1.25;overflow-wrap:anywhere;hyphens:auto}
+.pos-grid em{font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums}
+.pos-grid .is-added{border-color:var(--cobalt);box-shadow:inset 0 0 0 1px var(--cobalt)}
+.pos-ticket{display:flex;flex-direction:column;gap:10px;padding:18px 16px;background:var(--mist);font-size:.82rem}
+.pos-ticket-title{font-weight:700;font-size:.95rem}
+.pos-ticket ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.pos-ticket li{display:flex;justify-content:space-between;gap:8px}
+.pos-ticket li span:last-child{font-variant-numeric:tabular-nums}
+.pos-total{margin-top:auto;display:flex;justify-content:space-between;align-items:baseline;padding-top:12px;border-top:1px solid var(--line)}
+.pos-total strong{font-stretch:118%;font-weight:750;font-size:1.3rem;font-variant-numeric:tabular-nums}
+.pos-pay{padding:10px;border-radius:10px;background:var(--cobalt);color:#fff;font-weight:600;text-align:center}
+.pos-note{font-size:.72rem;line-height:1.35;color:var(--muted)}
+@media (max-width:640px){
+  .pos{grid-template-columns:minmax(0,1fr)}
+  .pos-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pos-grid span:nth-child(n+5){display:none}
+  .pos-ticket{border-top:1px solid var(--line)}
+}
+
+/* Online / offline modes */
+.modes{margin-top:clamp(56px,8vw,88px)}
+.modes-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px 32px;margin-bottom:28px}
+.modes-head h3{font-stretch:120%;font-weight:720;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.1;letter-spacing:-.02em}
+.modes-head p{color:var(--muted);max-width:46ch}
+.mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mode{padding:26px 24px;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
+.mode--both{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.mode-label{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:var(--muted)}
+.mode--both .mode-label{color:var(--on-cobalt-muted)}
+.mode-label i{width:8px;height:8px;border-radius:50%;background:var(--up)}
+.mode-label i.off{background:var(--signal)}
+.mode h4{margin:10px 0 8px;font-stretch:122%;font-weight:720;font-size:1.45rem;line-height:1.15;letter-spacing:-.015em}
+.mode p{color:var(--muted)}
+.mode--both p{color:var(--on-cobalt-muted)}
+.industries{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 26px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line);font-size:.98rem}
+.industries span{font-weight:600}
+.industries .industries-lead{font-weight:400;color:var(--muted)}
+@media (max-width:900px){.mode-grid{grid-template-columns:minmax(0,1fr)}}
 
 /* Process */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 32px}
@@ -512,7 +563,7 @@ body.has-wa .site-footer{padding-bottom:84px}
     <div class="container hero-grid">
       <div class="hero-copy">
         <h1 id="hero-title">Software your business can run on.</h1>
-        <p class="lede">3HDS Services designs and builds custom web platforms, mobile apps and MetaTrader trading systems, then keeps them secure and running after launch.</p>
+        <p class="lede">3HDS Services builds business software of every kind, online and offline, along with web platforms, mobile apps and MetaTrader trading systems. Then we keep it secure and running after launch.</p>
         <div class="actions">
           <a class="btn btn-light" href="#contact">Start a project</a>
           <a class="btn btn-ghost" href="#services">See what we build</a>
@@ -522,14 +573,52 @@ body.has-wa .site-footer{padding-bottom:84px}
       <div class="console">
         <div class="console-bar">
           <div class="tabs" role="tablist" aria-label="Examples of what we build">
-            <button class="tab" type="button" role="tab" id="tab-web" aria-controls="panel-web" aria-selected="true">Web<span class="tab-more"> platform</span></button>
+            <button class="tab" type="button" role="tab" id="tab-biz" aria-controls="panel-biz" aria-selected="true">Business<span class="tab-more"> software</span></button>
+            <button class="tab" type="button" role="tab" id="tab-web" aria-controls="panel-web" aria-selected="false" tabindex="-1">Web<span class="tab-more"> platform</span></button>
             <button class="tab" type="button" role="tab" id="tab-mobile" aria-controls="panel-mobile" aria-selected="false" tabindex="-1">Mobile<span class="tab-more"> app</span></button>
             <button class="tab" type="button" role="tab" id="tab-trade" aria-controls="panel-trade" aria-selected="false" tabindex="-1">Trading<span class="tab-more"> system</span></button>
           </div>
         </div>
 
+        <!-- Business software example -->
+        <div class="panel panel-biz" role="tabpanel" id="panel-biz" aria-labelledby="tab-biz" tabindex="0">
+          <div class="panel-body">
+            <div class="pos" aria-hidden="true">
+              <div class="pos-main">
+                <div class="pos-top">
+                  <p class="app-title">New sale</p>
+                  <span class="sync-pill"><i></i>Offline, 3 sales will sync</span>
+                </div>
+                <div class="pos-cats"><span class="is-active">All</span><span>Drinks</span><span>Bakery</span><span>Meals</span></div>
+                <div class="pos-grid">
+                  <span class="is-added"><b>Latte</b><em>3.40</em></span>
+                  <span><b>Mocha</b><em>3.20</em></span>
+                  <span class="is-added"><b>Wrap</b><em>6.50</em></span>
+                  <span class="is-added"><b>Brownie</b><em>2.90</em></span>
+                  <span><b>Muffin</b><em>2.80</em></span>
+                  <span><b>Soup</b><em>5.20</em></span>
+                  <span><b>Juice</b><em>3.10</em></span>
+                  <span><b>Tea</b><em>2.40</em></span>
+                </div>
+              </div>
+              <div class="pos-ticket">
+                <p class="pos-ticket-title">Order 1042</p>
+                <ul>
+                  <li><span>2 × Latte</span><span>6.80</span></li>
+                  <li><span>1 × Wrap</span><span>6.50</span></li>
+                  <li><span>1 × Brownie</span><span>2.90</span></li>
+                </ul>
+                <div class="pos-total"><span>Total</span><strong>£16.20</strong></div>
+                <span class="pos-pay">Take payment</span>
+                <p class="pos-note">Receipt prints and stock updates on the device, even without internet</p>
+              </div>
+            </div>
+          </div>
+          <p class="panel-caption">Example: point of sale that keeps working offline and syncs to the cloud</p>
+        </div>
+
         <!-- Web platform example -->
-        <div class="panel panel-web" role="tabpanel" id="panel-web" aria-labelledby="tab-web" tabindex="0">
+        <div class="panel panel-web" role="tabpanel" id="panel-web" aria-labelledby="tab-web" tabindex="0" hidden>
           <div class="panel-body">
             <div class="app" aria-hidden="true">
               <div class="app-nav">
@@ -623,7 +712,7 @@ body.has-wa .site-footer{padding-bottom:84px}
   <!-- Stack -->
   <div class="stack">
     <div class="container">
-      <p class="stack-line"><span class="stack-lead">Built with</span><span>Flutter</span><span>React</span><span>FastAPI</span><span>PHP</span><span>PostgreSQL</span><span>MQL5</span><span>Cloudflare</span></p>
+      <p class="stack-line"><span class="stack-lead">Built with</span><span>Flutter</span><span>React</span><span>FastAPI</span><span>PHP</span><span>PostgreSQL</span><span>SQLite</span><span>MQL5</span><span>Cloudflare</span></p>
     </div>
   </div>
 
@@ -632,10 +721,23 @@ body.has-wa .site-footer{padding-bottom:84px}
     <div class="container">
       <div class="section-head">
         <h2 id="services-title">What we build</h2>
-        <p>Four kinds of work, one standard: secure, documented software that belongs to you.</p>
+        <p>Five kinds of work, one standard: secure, documented software that belongs to you.</p>
       </div>
 
       <div class="service-list">
+        <article class="service">
+          <h3>Business software</h3>
+          <p class="service-desc">Accounting, invoicing, point of sale, stock, payroll, HR and complete management systems for businesses and offices, built around the way you already work instead of a one-size-fits-all package.</p>
+          <div>
+            <ul>
+              <li>Point of sale and stock control for shops and restaurants</li>
+              <li>Invoicing, expenses and financial reports</li>
+              <li>Staff roles, permissions and an audit trail</li>
+            </ul>
+            <p class="service-stack">Online, offline or both. Usually Flutter with a FastAPI backend</p>
+          </div>
+        </article>
+
         <article class="service">
           <h3>Web platforms</h3>
           <p class="service-desc">Booking systems, customer portals, admin dashboards and company websites, shaped around how your business actually runs day to day.</p>
@@ -687,6 +789,31 @@ body.has-wa .site-footer{padding-bottom:84px}
             <p class="service-stack">Works with the stack you already have</p>
           </div>
         </article>
+      </div>
+
+      <div class="modes">
+        <div class="modes-head">
+          <h3>Online, offline or both</h3>
+          <p>Every system is built for how and where your business works, including places where the internet can't be relied on.</p>
+        </div>
+        <div class="mode-grid">
+          <div class="mode">
+            <span class="mode-label"><i aria-hidden="true"></i>Cloud</span>
+            <h4>Online</h4>
+            <p>Use it in a browser or on your phone from anywhere, with updates and backups handled for you.</p>
+          </div>
+          <div class="mode">
+            <span class="mode-label"><i class="off" aria-hidden="true"></i>Desktop</span>
+            <h4>Offline</h4>
+            <p>Runs on your own computers or office server with no internet needed, and your data stays on your premises.</p>
+          </div>
+          <div class="mode mode--both">
+            <span class="mode-label"><i aria-hidden="true"></i>Hybrid</span>
+            <h4>Online and offline</h4>
+            <p>Keeps working when the connection drops, then syncs everything to the cloud automatically once it's back.</p>
+          </div>
+        </div>
+        <p class="industries"><span class="industries-lead">Built for</span><span>Shops</span><span>Restaurants and cafés</span><span>Workshops and garages</span><span>Clinics</span><span>Schools and training centres</span><span>Construction</span><span>Logistics and delivery</span><span>Manufacturing</span><span>Offices and organisations</span><span>Traders</span></p>
       </div>
     </div>
   </section>
@@ -743,6 +870,18 @@ body.has-wa .site-footer{padding-bottom:84px}
       </div>
 
       <div class="price-list">
+        <article class="price-row">
+          <div class="price-main">
+            <h3>Business software</h3>
+            <p>A custom management system such as point of sale, accounting or stock control, for online use, offline use or both.</p>
+          </div>
+          <ul class="price-includes">
+              <li>Designed around your own processes</li>
+              <li>Staff accounts and permissions</li>
+              <li>Setup and staff training</li>
+          </ul>
+          <p class="price"><span class="price-from">From</span><strong data-price="business">£5,000</strong></p>
+        </article>
         <article class="price-row">
           <div class="price-main">
             <h3>Business website</h3>
@@ -918,6 +1057,10 @@ body.has-wa .site-footer{padding-bottom:84px}
       <div class="faq">
         <h2 id="faq-title">Questions clients ask</h2>
         <details>
+          <summary>Can the software work without internet?</summary>
+          <p>Yes. We can build desktop software that runs fully offline on your own computers, cloud software you use in a browser, or a hybrid that keeps working when the connection drops and syncs automatically when it's back. We'll recommend the right setup on the first call.</p>
+        </details>
+        <details>
           <summary>How much does a project cost?</summary>
           <p>Starting prices for each kind of work are listed in the pricing section. After the first call you receive a written quote with a fixed price for the agreed scope, so the number doesn't move unless the scope does.</p>
         </details>
@@ -1051,7 +1194,7 @@ body.has-wa .site-footer{padding-bottom:84px}
       <p class="legal-summary">We only collect what we need to reply to you and deliver your project. We don't sell your information, and this website doesn't use advertising or tracking cookies.</p>
 
       <h2>Who we are</h2>
-      <p>3HDS Services ("3HDS", "we", "us") designs and builds websites, web platforms, mobile apps and trading software for clients in the United Kingdom, Australia and Pakistan. You can contact us about this policy at <a data-email-link data-email-text href="mailto:hello@3hds.com">hello@3hds.com</a>.</p>
+      <p>3HDS Services ("3HDS", "we", "us") designs and builds business software, websites, web platforms, mobile apps and trading software for clients in the United Kingdom, Australia and Pakistan. You can contact us about this policy at <a data-email-link data-email-text href="mailto:hello@3hds.com">hello@3hds.com</a>.</p>
 
       <h2>Information we collect</h2>
       <ul>
@@ -1186,7 +1329,7 @@ body.has-wa .site-footer{padding-bottom:84px}
         <svg class="brand-mark" viewBox="0 0 28 28" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="22" height="5.5" rx="2.75"/><rect x="10" y="11.25" width="15" height="5.5" rx="2.75"/><rect x="3" y="19.5" width="22" height="5.5" rx="2.75"/></svg>
         <span class="brand-name">3HDS</span><span class="brand-sub">Services</span>
       </a>
-      <p>Custom web platforms, mobile apps and trading systems for clients in the United Kingdom, Australia and Pakistan.</p>
+      <p>Business software, web platforms, mobile apps and trading systems for clients in the United Kingdom, Australia and Pakistan.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="#services">Services</a>
@@ -1261,9 +1404,9 @@ const CONFIG = {
 
   // Starting prices per country. Set a price to 0 to show "Custom quote" instead.
   pricing: {
-    uk: { label: "the UK",    symbol: "£",   prices: { website: 1500,  platform: 6000,   app: 12000,  trading: 500,   audit: 300,   support: 60 } },
-    au: { label: "Australia", symbol: "A$",  prices: { website: 2800,  platform: 11000,  app: 22000,  trading: 950,   audit: 550,   support: 110 } },
-    pk: { label: "Pakistan",  symbol: "Rs ", prices: { website: 60000, platform: 250000, app: 450000, trading: 50000, audit: 25000, support: 10000 } }
+    uk: { label: "the UK",    symbol: "£",   prices: { business: 5000,  website: 1500,  platform: 6000,   app: 12000,  trading: 500,   audit: 300,   support: 60 } },
+    au: { label: "Australia", symbol: "A$",  prices: { business: 9500,  website: 2800,  platform: 11000,  app: 22000,  trading: 950,   audit: 550,   support: 110 } },
+    pk: { label: "Pakistan",  symbol: "Rs ", prices: { business: 200000, website: 60000, platform: 250000, app: 450000, trading: 50000, audit: 25000, support: 10000 } }
   }
 };
 
